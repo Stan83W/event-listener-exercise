@@ -6,13 +6,4 @@
 // When clicked, we want:
 // The button to be disabled. This can be done by adding the .disabled class.
 // The button text to change from "Click me!" to "Bingo!"
-
-
-const button = document.querySelector('#clickme');
-const audio = new Audio('sound.mp3');
-
-button.addEventListener('click', (e) => {
-  e.currentTarget.classList.add('disabled');
-  e.currentTarget.innerText = 'Bingo!';
-  audio.play();
-});
+// The audio file to be played.
